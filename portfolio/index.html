@@ -401,13 +401,13 @@
     <script>
         AOS.init();
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
-    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+        tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
 
-    var loader = document.getElementById("preloader")
+        var loader = document.getElementById("preloader")
 
-    window.addEventListener("load", function () {
-      loader.style.display = "none"
-    })
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
     </script>
 
 </body>
