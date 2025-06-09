@@ -14,7 +14,9 @@
 </head>
 
 <body>
-
+    <div id="preloader">
+        <!-- <img src="circle-loader.gif" alt="Loading..." /> -->
+    </div>
     <!-- Header / Navbar -->
     <nav id="mainNavbar"
         class="navbar navbar-expand-lg navbar-light bg-white shadow fixed-top animate__animated animate__slideInDown">
@@ -24,7 +26,7 @@
             </a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarContent"
                 aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">&#9776;</span> 
+                <span class="navbar-toggler-icon">&#9776;</span>
             </button>
 
             <!-- Nav Links -->
@@ -326,8 +328,8 @@
                     <div class="partner-card">
                         <div class="partner-card-inner">
                             <div class="partner-card-front">
-                                <img src="data:image/png;base64,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" alt="Partner 4"
-                                    class="partner-logo" />
+                                <img src="data:image/png;base64,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"
+                                    alt="Partner 4" class="partner-logo" />
                             </div>
                             <div class="partner-card-back d-flex align-items-center justify-content-center text-white">
                                 <p class="mb-0">Google Research</p>
@@ -398,8 +400,15 @@
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script>
         AOS.init();
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(el => new bootstrap.Tooltip(el));
+
+    var loader = document.getElementById("preloader")
+
+    window.addEventListener("load", function () {
+      loader.style.display = "none"
+    })
     </script>
-    <script src="script.js"></script>
 
 </body>
 
